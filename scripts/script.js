@@ -10,3 +10,8 @@ function myFunction() {
       x.className = "right-nav";
     }
   }
+
+  function myFunction() {
+    var posts = document.getElementById("del");
+    posts.remove();
+  }

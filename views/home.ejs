@@ -1,21 +1,25 @@
-
 <%- include("partials/header"); -%>
+
+
 <link rel = "stylesheet" href = "../styles/home.css">
-
-    
-
-    <h1>Recent Uploads<br></h1><br><br>
-  <%  posts.forEach(function(post){ %>
+    <h1><b>Recent Uploads</b><br></h1><br><br>
+    <%  posts.forEach(function(post){ %> 
     <div class="container">
-    <h1><%=post.name%></h1>
-    <p>
-    <%=post.text.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
-    <button type="submit" class="loginbtn btn"><h3>Endorse</h3></button>  
-  </div></p><br><br>
- 
-
-    <% }) %>
-
+      
+      <h1><%=post.name%></h1><i class="material-icons" style="font-size:48px;color:red">delete_sweep</i><br><br>
+      <p>
+        <script type="text/javascript">
+          var clicks = 0;
+          function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+          };
+          </script>
+      <%=post.text%>
+      <a href="/posts/<%=post._id%>"></a>
+      <button type="button" onClick="onClick()">Endorse</button>
+      <p>Endorsers: <a id="clicks">0</a></p>    </div>
+      <% }) %>
+   
 
 <%- include("partials/footer"); -%>

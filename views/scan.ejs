@@ -1,17 +1,30 @@
 <%- include("./partials/header") %>
+<link rel = "stylesheet" href = "../styles/scan.css">
 <body>
+  <div class="w3-right w3-medium right-nav" id="myTopnav">
+  </div> 
     <div class="container">
-        <br>
-        <h1 class="text-center">Scan Me!</h1>
-        <hr>
-        <div class="row mb-3">
-
-        <div class="card" style="width: 18rem;">
+    <h1>Welcome!</h1>  
+<div class="row mb-3">
+<div class="card" style="width: 18rem;">
             <img class="card-img-top" src=<%=src%> alt="QR Code Image">
             <div class="card-body">
             <p class="card-text">Scan the QR Code to access data!</p>
-            </div>
-            </div>
-        </div>  
+</div>
+</div>
+</div> 
+    </div> 
+    <button class="registerBtn"><h3><a href= "/home">Whats new!</a></h3></button>
+    <button class="registerBtn"><h3><a href= "/compose">Compose</a></h3></button>
+       <div class="container">
+        <h1>Do you know where your charity goes?</h1>
+        <p>
+        Ever wondered where your donations go?
+        Is your charity reaching the deserved?
+        Is the collector taking the donation to the needed ones?
+        Our platform will show you, whom your money is helping and how.
+        </p>
+      </div>
+
 </body>
 <%- include("./partials/footer") %>

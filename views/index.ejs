@@ -8,16 +8,14 @@
 <div class="w3-right w3-medium right-nav" id="myTopnav">
 <a href="/login" class="w3-bar-item w3-button w3-hover-white">Login</a>
 <a href="/compose" class="w3-bar-item w3-button w3-hover-white">Compose</a>
-<a href="#contact" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-facebook-square" ></i></a>
-<a href="#contact" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-<a href="#contact" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  <i class="fa fa-bars"></i>
-</a>
+<a href="/scan" class="w3-bar-item w3-button w3-hover-white">Scan</a>
+
 </div>
 </div>
 <div class="container">
   <div class="header">
+    <p><b>Welcome  <%=email %></b></p>
+
     <h1>Do you know where your charity goes?</h1>
     <p>
     Ever wondered where your donations go?
@@ -25,12 +23,26 @@
     Is the collector taking the donation to the needed ones?
     Our platform will show you, whom your money is helping and how.
     
-
+    
     </p>
-    <button class="registerBtn"><h3><a href= "/register">Register</a></h3></button>
     <button class="registerBtn"><h3><a href= "/home">Whats new!</a></h3></button>
     
   </div>
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <p class="card-text">Scan the QR Code to access data!</p>
+    </div>
+  </div>
+
+
+
+
   <div class="footer">
     <h4>“When a person dies, all their deeds end except three:
       a continuing charity, beneficial knowledge and a 

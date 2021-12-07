@@ -1,14 +1,19 @@
 
-<%- include("partials/header"); -%>
-    <h1>Compose</h1>
-    <form class="" action="/compose" method="post">
-      <div class="form-group">
-        <label>Title</label>
-        <input class="form-control" type="text" name="name">
-        <label>Post</label>
-        <textarea class="form-control" name="text" rows="5" cols="30"></textarea>
+<%- include("partials/header") -%>
+<link rel = "stylesheet" href = "styles/compose.css">
+
+    
+    <form action="/compose" method="post">
+      
+      <div class="container">
+        <h1>Compose</h1>       
+        <label>Name</label>
+        <input type="name" name="name">
+        <label>Details</label>
+        <textarea id= "text" name="text" rows="5" cols="60"></textarea>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
       </div>
-      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+      
     </form>
 
 <%- include("partials/footer"); -%>
