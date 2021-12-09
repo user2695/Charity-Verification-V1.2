@@ -8,7 +8,7 @@ qrcode = require('qrcode');
 var qr = require('qrcode');
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const DB = "mongodb+srv://admin-zubair:zubair12@cluster0.7tjmi.mongodb.net/testDatabase?retryWrites=true&w=majority/notesDB"
+const DB = "mongodb+srv://admin-zubair:******@cluster0.7tjmi.mongodb.net/testDatabase?retryWrites=true&w=majority/notesDB"
 let posts=[];
 mongoose.connect(DB, {
   
